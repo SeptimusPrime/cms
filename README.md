@@ -1,16 +1,13 @@
-<p align="center"><a href="https://craftcms.com/" target="_blank"><img width="312" height="90" src="https://craftcms.com/craftcms.svg" alt="Craft CMS"></a></p>
+## Introduction
+This is Craft 3 application, done in GRANA theme.
 
-## About Craft CMS
+## How to get started
+#### Setup a fresh environment for this repo
+- Setup this repo with Docker via [grana cms docker](https://github.com/GRANA/cms)  
+- If you prefer, Install [Craft 3](https://docs.craftcms.com/v3/installation.html) from scratch, and setup all dependencies manually (not recommended)
 
-Craft is a content-first CMS that aims to make life enjoyable for developers and content managers alike. It is optimized for bespoke web and application development, offering developers a clean slate to build out exactly what they want, rather than wrestling with a theme.
-
+## Official resources from Craft 3
 Learn more about Craft at [craftcms.com](https://craftcms.com).
-
-## How to Install Craft 3
-
-See the Craft 3 documentation for [installation](https://docs.craftcms.com/v3/installation.html) and [updating](https://docs.craftcms.com/v3/updating.html) instructions.
-
-## Resources
 
 #### Official Resources
 - [Craft 3 Documentation](https://docs.craftcms.com/v3/)
