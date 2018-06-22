@@ -1,0 +1,9 @@
+<div id="{{ module.slug }}" class="mn--module image-set">
+{% set imageCount = module.imageSetImageArray | length %}
+{% for block in module.imageSetImageArray %}
+    {% set image = block.image.first() %}
+    <div class="image-set-third {% if imageCount < 3 and loop.first %} image-set-push-{{ imageCount }} {% endif %}">
+        <img class="image-set-img" src="{{ siteUrl}}{{ image.getUrl() }}" alt="{{ image.title }}">
+    </div>
+{% endfor %}
+</div>

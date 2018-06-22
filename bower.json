@@ -1,0 +1,17 @@
+{
+  "name": "grana-craft",
+  "description": "Craft CMS dependencies",
+  "main": "",
+  "authors": [
+    "Grana"
+  ],
+  "license": "(OSL-3.0 OR AFL-3.0)",
+  "homepage": "https://github.com/GRANA/Grana-M2",
+  "private": true,
+  "ignore": [],
+  "dependencies": {
+    "neat": "2.0.0",
+    "bourbon": "4.2.2",
+    "mangolian": "git@github.com:GRANA/style-guide.git#M2-3866"
+  }
+}

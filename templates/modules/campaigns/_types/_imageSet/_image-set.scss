@@ -1,0 +1,21 @@
+.image-set {
+  @include grid-container();
+
+  &-img {
+    position: relative;
+    width: 100%;
+  }
+
+  &-third {
+    @include grid-column(4);
+  }
+
+  &-push-1 {
+    @include grid-push(4);
+  }
+
+  &-push-2 {
+    @include grid-push(2);
+  }
+ 
+}

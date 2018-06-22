@@ -1,0 +1,7 @@
+<div id="{{ module.slug }}" class="mn--module text-statement">
+{% for block in module.textStatementColumnBlock %}
+	<div class="text-statement-{{ block.columnBlockWidth }} text-statement-{{ block.columnBlockContentAlignment }} {% if loop.first and block.columnBlockGridPush %} text-statement-push-{{ block.columnBlockGridPush }} {% endif %}">
+        {{ block.columnBlockContent }}
+    </div>
+{% endfor %}
+</div>

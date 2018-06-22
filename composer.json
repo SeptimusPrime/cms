@@ -23,7 +23,8 @@
     "vlucas/phpdotenv": "^2.4.0",
     "yiisoft/yii2-redis": "^2.0",
     "craftcms/element-api": "2.5.2",
-    "craftcms/aws-s3": "1.0.8"
+    "craftcms/aws-s3": "1.0.8",
+    "craftcms/redactor": "2.1.0"
   },
   "autoload": {
     "psr-4": {

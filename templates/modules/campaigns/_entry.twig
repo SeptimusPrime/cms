@@ -1,0 +1,9 @@
+{% extends "layouts/_base" %}
+
+{% set entries = entry.children %}
+
+{% block content %}
+{% for module in entries %}
+	{% include "modules/campaigns/_types/_" ~ module.type ~ "/" ~ module.type %}
+{% endfor %}
+{% endblock %}

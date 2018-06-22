@@ -1,0 +1,24 @@
+<div class="footer-newsletter-container">
+	{% for entry in craft.entries.section('footer') %}
+		<h2 class="footer-newsletter-title">{{ entry.newsletterCta }}</h2>
+	{% endfor %}
+	<form class="footer-newsletter-signup" method="post" action="">
+		<div class="field-group footer-newsletter-signup-email">
+		  <label for="footer-newsletter-email" class="field-label">email address</label>
+		  <input type="text" id="footer-newsletter-email" class="field-text field-text-white field-text-rightpad-m gr-valid-email" name="email" autocomplete="off">
+		  <div class="field-submit">
+		    <button type="submit" class="field-submit-btn field-submit-btn-apply field-submit-btn-arrow">sign up></button>
+		  </div>
+		</div>
+
+		<ul class="footer-newsletter-signup-choice">
+		   <li>
+		      <input type="radio" id="footer-newsletter-female" data-type="women" value="Female" name="gender" class="js-newsletter-radiobutton radiobutton" checked>
+		      <label for="footer-newsletter-female" ><span class="radiobutton-label-name footer-newsletter-label">women</span></label>
+		    </li><li>
+		      <input type="radio" id="footer-newsletter-male" data-type="men" value="Male" name="gender" class="js-newsletter-radiobutton radiobutton">
+		      <label for="footer-newsletter-male"><span class="radiobutton-label-name footer-newsletter-label">men</span></label>
+		    </li>
+		</ul>
+	</form>
+</div>

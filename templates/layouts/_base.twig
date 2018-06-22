@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    {# Base #}
+    {% includeCssFile siteUrl~'layouts/base.css' %}
+    {% includeCssFile siteUrl~'css/main.css' %}
+    <script type='text/javascript' src='{{ siteUrl }}js/jquery.min.js'></script>
+    <script type='text/javascript' src='{{ siteUrl }}js/jquery.touchSwipe.min.js'></script>
+    <script type='text/javascript' src='{{ siteUrl }}js/transparent_nav.js'></script>
+    <script type='text/javascript' src='{{ siteUrl }}js/scrollmagic/ScrollMagic.min.js'></script>
+
+    {{ head() }}    
+</head>
+<body class="page-layout-grana-landing">
+    
+    {% include 'modules/header/_header' %}
+
+{% block content %}{% endblock %}
+
+    {% include 'modules/footer/_footer' %}
+
+    {{ endBody() }}
+    
+</body>

@@ -1,0 +1,38 @@
+{% includeJsFile 'js/multi.slider.js' %}
+{% includeJsFile 'modules/megatron/megatron.js' %}
+
+<div class="multislider multislider-home" data-device="desktop">
+  <div class="multislider-home-inner">
+    <span class="multislider-arrow multislider-arrow-left" style="display:none;" data-direction="left"></span>
+    <span class="multislider-arrow multislider-arrow-right" style="display:none;" data-direction="right"></span>
+    <ul class="multislider-items">
+      {% for banner in craft.entries.section('megatron').limit(4) %}
+        {% set asset = banner.Image.first() %}
+        <li class="multislider-item multislider-item-full {% if loop.first %}is-selected{% endif %}" style="background-image: url('{{ asset.url }}')">
+        <a href="{{ banner.megatronBannerLink }}">
+            <div class="megatron megatron-full">
+              <div class="megatron-nav megatron-nav-bottom-high">
+                <div class="arrow-link arrow-link-lg arrow-link-wide">
+                  {{ banner.megatronBannerCta }}
+                </div>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="multislider-home-nav">
+    <ul class="multislider-home-nav-items">
+      {% for banner in craft.entries.section('megatron').limit(4) %}
+          <li class="multislider-home-nav-item {% if loop.first %}is-selected{% endif %}">
+              <h2 class="multislider-home-nav-title">{{ banner.slideTitle }}</h2>
+              <p class="multislider-home-nav-sub">
+                {{ banner.slideText }}
+              </p>
+          </li>
+        {% endfor %}
+    </ul>
+  </div>
+</div>
+

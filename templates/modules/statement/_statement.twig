@@ -1,0 +1,10 @@
+<section class="l-module-fixed">
+  <ul class="statement-list">
+    {% for entry in craft.entries.section('statement').limit(3) %}
+        <li class="statement-list-item">
+            <h3 class="statement-list-header">{{ entry.title }}</h3>
+            <p class="statement-list-text">{{ entry.caption }}</p>
+        </li>
+    {% endfor %}
+  </ul>
+</section>
