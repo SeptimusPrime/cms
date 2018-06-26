@@ -1,4 +1,8 @@
 /.env
 /.idea
 /vendor
+.sass-cache
+/web/css/*.css
+/web/css/*.map
+/node_modules
 .DS_Store

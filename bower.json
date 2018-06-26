@@ -12,6 +12,6 @@
   "dependencies": {
     "neat": "2.0.0",
     "bourbon": "4.2.2",
-    "mangolian": "git@github.com:GRANA/style-guide.git#M2-3866"
+    "mangolian": "https://github.com/GRANA/style-guide.git#M2-3866"
   }
 }
